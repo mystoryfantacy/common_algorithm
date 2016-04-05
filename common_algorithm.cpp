@@ -69,6 +69,7 @@ void sellsort(int array[], int n) {
 //o(n*logn ~ n^2) 不稳定
 // 递归调用， ？
 void quicksort(int array[], int lo, int hi) {
+  if (lo >= hi) return;
   int i = lo, j = hi + 1;
   int v = array[lo];
   while(true) {
