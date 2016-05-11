@@ -60,6 +60,7 @@ void sellsort(int array[], int n) {
       for (int i = step; i>= h; i -= h) {
         if (array[i] < array[i - h])
           swap(array, i, i-h);
+        else break;
       }
     }
   }
