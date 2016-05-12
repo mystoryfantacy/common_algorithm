@@ -55,7 +55,7 @@ void selectionsort(int array[], int n) {
 void sellsort(int array[], int n) {
   int step,h;
   for(h=1; h<=N/9; h = 3*h + 1);
-  for (;h>0;h/3) {
+  for (;h>0;h/=3) {
     for (step = h; step < n; step++) {
       for (int i = step; i>= h; i -= h) {
         if (array[i] < array[i - h])
